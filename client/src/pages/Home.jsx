@@ -3,7 +3,7 @@ import useFetchData from '../hooks/fetchData'
 import { useEffect } from 'react'
 import { getFeaturedProducts, getProductsByCondition } from '../config/api'
 import Loader from '../utils/Loader'
-import {FeaturedProduct, Condition } from '../components'
+import {FeaturedProduct, Condition , Preorder} from '../components'
 
 export default function Home() {
   const { data:featured, error, loading } = useFetchData(getFeaturedProducts)
@@ -49,7 +49,9 @@ export default function Home() {
               <p className='fs-3'>Your one stop shop for all things</p>
             </div>
           </div>
-          
+          <div className='layout-container mt-3 py-5 px-3'>
+            <Preorder data={condition} />
+          </div>
         </>
       )}
     </section>

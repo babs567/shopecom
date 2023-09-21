@@ -8,6 +8,7 @@ import ImageModal from './ImageModal'
 import Paypal from './Paypal'
 import UpdateProfile from './UpdateProfile'
 import Error from './Error'
+import Preorder from './Preorder'
 
 export {
   Root,
@@ -20,4 +21,5 @@ export {
   Paypal,
   UpdateProfile,
   Error,
+  Preorder
 }
